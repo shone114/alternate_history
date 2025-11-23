@@ -1,0 +1,49 @@
+{
+    "topic_id": "alt_history_cold_war_no_moon_landing",
+    "title": "Cold War Without the Apollo 11 Moon Landing",
+    "historical_divergence_point": {
+        "date": "1969-07-16",
+        "description": "The Apollo 11 launch suffers a catastrophic engine failure shortly after liftoff, grounding the entire Apollo program indefinitely. NASA loses political support and public trust. The United States never achieves the first Moon landing."
+    },
+    "initial_consequences": [
+        "Global perception shifts: USSR seen as the more competent space power.",
+        "Massive budget cuts hit NASA in 1970-1973.",
+        "Soviet prestige skyrockets, accelerating their Mars ambitions.",
+        "U.S. pivots from space to military and cyber R&D."
+    ],
+    "key_actors": [
+        {
+            "name": "NASA",
+            "type": "organization",
+            "status": "weakened"
+        },
+        {
+            "name": "US Government",
+            "type": "government",
+            "status": "strategic_redirection"
+        },
+        {
+            "name": "Soviet Space Program (OKB-1)",
+            "type": "organization",
+            "status": "ascendant"
+        },
+        {
+            "name": "Leonid Brezhnev",
+            "type": "political",
+            "status": "confident"
+        },
+        {
+            "name": "Richard Nixon",
+            "type": "political",
+            "status": "under_pressure"
+        }
+    ],
+    "world_state": {
+        "space_race": "USSR_advantage",
+        "global_tension": 0.62,
+        "us_public_trust_in_space_program": 0.23,
+        "soviet_confidence": 0.81,
+        "tech_focus_shift": "cyber_military"
+    },
+    "notes": "This snapshot should be included before generating each day's new event."
+}
