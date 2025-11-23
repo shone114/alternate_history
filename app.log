@@ -16,3 +16,242 @@
 2025-11-23 13:15:53,194 [INFO] Inserted judgment into 'judgements' collection.
 2025-11-23 13:15:53,196 [INFO] Inserted accepted event into 'timeline' collection.
 2025-11-23 13:15:53,196 [INFO] Decision: accept_A
+2025-11-23 13:16:33,195 [INFO] Connected to MongoDB -> alternate_history
+2025-11-23 13:16:33,205 [INFO] MongoDB indexes verified.
+2025-11-23 13:16:33,205 [INFO] Starting Alternate History Engine Pipeline (MongoDB Version)...
+2025-11-23 13:16:33,208 [INFO] Processing Day Index: 9
+2025-11-23 13:16:33,208 [INFO] --- Step 1: Generating Subtopic (Qwen) [Day 9] ---
+2025-11-23 13:16:34,241 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 13:16:48,389 [INFO] Inserted subtopic into MongoDB.
+2025-11-23 13:16:48,390 [INFO] --- Step 2: Generating Model A Proposal (Gemini) ---
+2025-11-23 13:16:57,805 [INFO] Inserted Model A proposal into MongoDB.
+2025-11-23 13:16:57,806 [INFO] --- Step 3: Generating Model B Proposal (DeepSeek) ---
+2025-11-23 13:16:59,854 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 13:17:10,037 [INFO] Inserted Model B proposal into MongoDB.
+2025-11-23 13:17:10,037 [INFO] --- Step 4: Generating Model C Judgment (Groq) ---
+2025-11-23 13:17:11,736 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 13:17:11,747 [INFO] Inserted judgment into 'judgements' collection.
+2025-11-23 13:17:11,748 [INFO] Inserted accepted event into 'timeline' collection.
+2025-11-23 13:17:11,748 [INFO] Decision: merge
+2025-11-23 13:38:38,054 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:38:38,054 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:38:38,054 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:38:38,062 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:38:38,076 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:38:38,088 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:38:50,085 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:38:50,102 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:40:53,509 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:40:53,530 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:44:14,352 [INFO] alternate_history: Starting simulation for Day 10
+2025-11-23 13:44:14,353 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 10] ---
+2025-11-23 13:44:15,573 [ERROR] alternate_history: Attempt 1 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:44:17,609 [ERROR] alternate_history: Attempt 2 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:44:19,647 [ERROR] alternate_history: Attempt 3 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:44:27,475 [INFO] alternate_history: Starting simulation for Day 10
+2025-11-23 13:44:27,478 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 10] ---
+2025-11-23 13:44:27,594 [ERROR] alternate_history: Attempt 1 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:44:29,644 [ERROR] alternate_history: Attempt 2 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:44:31,684 [ERROR] alternate_history: Attempt 3 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:45:39,297 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:39,297 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:39,327 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:39,375 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:39,390 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:45,296 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:45,317 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:45,327 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:45,329 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:45,330 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:45,331 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:45,333 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:45,339 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:45,341 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:45,358 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:45,359 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:45,360 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:45,360 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:45,375 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:45,376 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:45:50,818 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:50,826 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:50,842 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:50,859 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:50,862 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:50,877 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:50,880 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:50,908 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:50,923 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:45:50,956 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:45:59,072 [INFO] alternate_history: Starting simulation for Day 10
+2025-11-23 13:45:59,072 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 10] ---
+2025-11-23 13:45:59,551 [ERROR] alternate_history: Attempt 1 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:46:01,583 [ERROR] alternate_history: Attempt 2 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:46:03,631 [ERROR] alternate_history: Attempt 3 failed: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-11-23 13:47:38,430 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:47:38,460 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:47:38,507 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:47:38,507 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:47:38,554 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 13:47:44,441 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:47:44,457 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:47:44,466 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:47:44,472 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:47:44,474 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:47:44,482 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:47:44,491 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:47:44,500 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 13:47:44,519 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 13:47:44,520 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:01:41,313 [INFO] alternate_history: Starting simulation for Day 10
+2025-11-23 14:01:41,314 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 10] ---
+2025-11-23 14:02:13,030 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-23 14:02:13,030 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-23 14:02:23,565 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-23 14:02:23,568 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-23 14:02:38,543 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-23 14:02:38,544 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-23 14:02:40,907 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-23 14:02:40,909 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-23 14:03:09,654 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:09,667 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:09,667 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:09,684 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:09,715 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:15,516 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:15,548 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:15,550 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:15,554 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:15,558 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:15,580 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:15,581 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:15,581 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:15,597 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:15,626 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:15,628 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:16,996 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:17,028 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:17,029 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:03:20,921 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:20,931 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:20,972 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:20,984 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:20,995 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:21,028 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:21,058 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:21,076 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:03:22,094 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:03:22,105 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:05:31,711 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:05:38,058 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:05:38,070 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:11:31,970 [INFO] alternate_history: Starting simulation for Day 11
+2025-11-23 14:11:31,970 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 11] ---
+2025-11-23 14:11:45,317 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-23 14:11:45,317 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-23 14:11:55,314 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-23 14:11:55,316 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-23 14:12:08,914 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-23 14:12:08,914 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-23 14:12:10,595 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-23 14:12:10,596 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-23 14:14:11,901 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:11,901 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:11,917 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:11,979 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:11,979 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:17,004 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:17,012 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:17,022 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:17,031 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:17,033 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:17,035 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:17,064 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:18,619 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:18,649 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:22,923 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:22,924 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:22,955 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:22,955 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:23,018 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:28,592 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:28,623 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:28,624 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:28,626 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:28,632 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:28,634 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:28,650 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:28,657 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:28,659 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:28,661 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:28,688 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:28,690 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:28,734 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:28,764 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:28,766 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:34,254 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:34,266 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:34,267 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:34,290 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:34,299 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:34,302 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:34,313 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:34,324 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:34,327 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:34,365 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:34,388 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:34,390 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:34,423 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:34,430 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:34,432 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:14:39,762 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:39,791 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:39,817 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:39,827 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:39,841 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:39,885 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:39,903 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:39,934 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:14:39,991 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:14:40,024 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:32,859 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:32,875 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:32,890 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:32,905 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:42,680 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:42,698 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:42,700 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:42,703 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:42,705 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:42,710 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:42,711 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:42,718 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:42,719 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:42,829 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:42,838 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:42,840 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:42,850 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:42,870 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:42,871 [INFO] alternate_history: MongoDB connection closed.
+2025-11-23 14:15:48,177 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:48,185 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:48,202 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:48,218 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:48,230 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:48,261 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:48,418 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:48,432 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-23 14:15:48,448 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:15:48,463 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-23 14:16:56,276 [INFO] alternate_history: Starting simulation for Day 12
+2025-11-23 14:16:56,277 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 12] ---
+2025-11-23 14:17:08,216 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-23 14:17:08,218 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-23 14:17:17,405 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-23 14:17:17,407 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-23 14:17:28,667 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-23 14:17:28,667 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-23 14:17:31,495 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-23 14:17:31,498 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-23 14:17:31,501 [INFO] alternate_history: Simulation completed successfully for day 12
+2025-11-23 14:19:53,303 [INFO] alternate_history: MongoDB connection closed.

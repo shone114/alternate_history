@@ -1,21 +1,29 @@
-# Environment Variables
+# Environment
 .env
 
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 .Python
 env/
 venv/
 .venv/
-pip-log.txt
-pip-delete-this-directory.txt
 
-# IDEs
+# Logs
+*.log
+app.log
+
+# Testing
+test_*.py
+comprehensive_test.py
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # OS
 .DS_Store

@@ -3,3 +3,6 @@ openai
 google-generativeai
 groq
 pymongo
+fastapi
+uvicorn
+pydantic-settings
