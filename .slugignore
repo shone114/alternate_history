@@ -1,4 +1,4 @@
-# Railway Ignore File
+# Render Ignore File
 # Exclude frontend folder from backend deployment
 
 alt history frontend/
@@ -25,5 +25,4 @@ __pycache__/
 .coverage
 
 # Documentation (optional - remove if you want docs deployed)
-*.md
-!README.md
+DEPLOYMENT.md
