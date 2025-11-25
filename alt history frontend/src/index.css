@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  font-family: 'VT323', monospace;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 20px;
+
+  color-scheme: dark;
+  color: #00ff00;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* CRT Screen glow effect - Applied to entire app */
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at center, rgba(0, 255, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Scanlines effect - Applied to entire app */
+#root::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3) 1px,
+      transparent 1px,
+      transparent 3px);
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanlines 8s linear infinite;
+}
+
+/* CRT Effect Styles */
+.crt-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Screen phosphor glow overlay */
+.crt-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 255, 0, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 5;
+  animation: phosphorGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes phosphorGlow {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scanlines {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* Screen flicker animation */
+@keyframes flicker {
+  0% {
+    opacity: 0.98;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.98;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.98;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.crt-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  animation: flicker 5s infinite;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for terminal look - HIDDEN */
+.crt-content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.crt-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.crt-content::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.crt-content::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/* Terminal text styles */
+.terminal-text {
+  font-family: 'VT323', monospace;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.terminal-prompt::before {
+  content: '> ';
+}
+
+/* Cursor blink */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff00;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

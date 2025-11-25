@@ -28,3 +28,8 @@ comprehensive_test.py
 # OS
 .DS_Store
 Thumbs.db
+
+# Frontend
+node_modules/
+dist/
+*.local

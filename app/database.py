@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from app.config import settings
 from app.utils.logging import logger
 
+
 class Database:
     client: MongoClient = None
     db = None
@@ -15,7 +16,7 @@ class Database:
         except Exception as e:
             logger.error(f"Failed to connect to MongoDB: {e}")
             raise e
-
+    
     def close(self):
         if self.client:
             self.client.close()

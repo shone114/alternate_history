@@ -1,0 +1,95 @@
+.terminal-output {
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.terminal-text {
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+.terminal-command {
+  color: #00aa00;
+  font-family: 'VT323', monospace;
+  text-shadow: 0 0 3px #00aa00;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-text {
+  color: #00aa00;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  text-shadow: 0 0 3px #00aa00;
+  white-space: pre;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+.cursor.loading {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 5px #00ff00;
+  }
+
+  50% {
+    opacity: 0.3;
+    box-shadow: 0 0 15px #00ff00;
+  }
+}
+
+.terminal-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: transparent;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  caret-color: transparent;
+  z-index: 10;
+}
+
+.terminal-input::selection {
+  background-color: transparent;
+  color: transparent;
+}

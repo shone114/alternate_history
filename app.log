@@ -343,3 +343,20 @@
 2025-11-25 09:54:09,594 [INFO] apscheduler.scheduler: Scheduler has been shut down
 2025-11-25 09:54:09,595 [INFO] alternate_history: Scheduler shut down.
 2025-11-25 09:54:09,595 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 10:35:27,182 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 10:35:27,200 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 10:35:27,230 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 10:35:27,234 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 10:35:27,234 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 10:35:27,235 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:51 (Asia/Kolkata)
+2025-11-25 11:07:50,982 [INFO] alternate_history: Starting simulation for Day 2
+2025-11-25 11:07:50,983 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 2] ---
+2025-11-25 11:08:17,959 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-25 11:08:17,960 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-25 11:08:28,231 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-25 11:08:28,232 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-25 11:08:42,031 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-25 11:08:42,032 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-25 11:08:44,592 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-25 11:08:44,593 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-25 11:08:44,594 [INFO] alternate_history: Simulation completed successfully for day 2
