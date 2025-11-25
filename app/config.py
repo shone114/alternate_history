@@ -18,6 +18,12 @@ class Settings(BaseSettings):
     # Security
     ADMIN_API_KEY: str = "secret-admin-key" # Change this in production!
 
+    # Scheduler
+    ENABLE_SCHEDULER: bool = True
+    SCHEDULE_TIME: str = "09:51" # HH:MM
+    TIMEZONE: str = "Asia/Kolkata"
+    API_BASE_URL: str = "http://localhost:8000"
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"

@@ -1,6 +1,7 @@
 import json
 import time
-from datetime import datetime, timezone
+import pytz
+from datetime import datetime
 from typing import Optional, Dict, Any
 
 from app.database import db
@@ -73,7 +74,7 @@ class PipelineService:
                     "selected_subtopic": event_data.get("selected_subtopic", "Unknown"),
                     "reason": event_data.get("reason", ""),
                     "tags": event_data.get("expected_focus_tags", []),
-                    "created_at": datetime.now(timezone.utc)
+                    "created_at": datetime.now(pytz.timezone("Asia/Kolkata"))
                 }
                 db.get_collection("subtopics").insert_one(subtopic_doc)
                 logger.info("Inserted subtopic into MongoDB.")
@@ -103,7 +104,7 @@ class PipelineService:
                     "universe_id": settings.UNIVERSE_ID,
                     "day_index": day_index,
                     "model": "A",
-                    "created_at": datetime.now(timezone.utc),
+                    "created_at": datetime.now(pytz.timezone("Asia/Kolkata")),
                     **event_data,
                     "subtopic": subtopic_data.get("selected_subtopic")
                 }
@@ -134,7 +135,7 @@ class PipelineService:
                 "universe_id": settings.UNIVERSE_ID,
                 "day_index": day_index,
                 "model": "B",
-                "created_at": datetime.now(timezone.utc),
+                "created_at": datetime.now(pytz.timezone("Asia/Kolkata")),
                 **event_data,
                 "subtopic": subtopic_data.get("selected_subtopic")
             }
@@ -168,7 +169,7 @@ class PipelineService:
                     "day_index": day_index,
                     "decision": response_json.get("decision", "N/A"),
                     "reason": response_json.get("reason", "N/A"),
-                    "created_at": datetime.now(timezone.utc)
+                    "created_at": datetime.now(pytz.timezone("Asia/Kolkata"))
                 }
                 db.get_collection("judgements").insert_one(judgment_doc)
                 logger.info("Inserted judgment into 'judgements' collection.")
@@ -179,7 +180,7 @@ class PipelineService:
                     "day_index": day_index,
                     "subtopic": subtopic_data.get("selected_subtopic"),
                     "event": response_json["accepted_log"],
-                    "created_at": datetime.now(timezone.utc)
+                    "created_at": datetime.now(pytz.timezone("Asia/Kolkata"))
                 }
                 db.get_collection("timeline").insert_one(timeline_doc)
                 logger.info("Inserted accepted event into 'timeline' collection.")

@@ -255,3 +255,91 @@
 2025-11-23 14:17:31,498 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
 2025-11-23 14:17:31,501 [INFO] alternate_history: Simulation completed successfully for day 12
 2025-11-23 14:19:53,303 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:40:57,378 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:40:57,420 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:40:57,453 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:40:57,493 [ERROR] alternate_history: Failed to start scheduler: Schedulers cannot be serialized. Ensure that you are not passing a scheduler instance as an argument to a job, or scheduling an instance method where the instance contains a scheduler as an attribute.
+2025-11-25 09:42:39,111 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:42:43,391 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:42:43,424 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:42:43,460 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:42:43,463 [ERROR] alternate_history: Failed to start scheduler: Schedulers cannot be serialized. Ensure that you are not passing a scheduler instance as an argument to a job, or scheduling an instance method where the instance contains a scheduler as an attribute.
+2025-11-25 09:42:55,271 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:44:52,856 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:44:52,895 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:44:52,927 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:44:52,934 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 09:44:52,934 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 09:44:52,935 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:46 (Asia/Kolkata)
+2025-11-25 09:46:00,009 [INFO] apscheduler.executors.default: Running job "Daily Simulation Pipeline (trigger: cron[hour='9', minute='46'], next run at: 2025-11-25 09:46:00 IST)" (scheduled at 2025-11-25 09:46:00+05:30)
+2025-11-25 09:46:00,010 [INFO] alternate_history: Scheduler triggering daily simulation...
+2025-11-25 09:46:02,340 [INFO] alternate_history: Starting simulation for Day 13
+2025-11-25 09:46:02,341 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 13] ---
+2025-11-25 09:46:13,945 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-25 09:46:13,946 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-25 09:46:24,097 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-25 09:46:24,098 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-25 09:46:37,363 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-25 09:46:37,364 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-25 09:46:39,901 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-25 09:46:39,902 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-25 09:46:39,903 [INFO] alternate_history: Simulation completed successfully for day 13
+2025-11-25 09:46:39,905 [INFO] alternate_history: Scheduled simulation completed successfully: {'day_index': 13, 'status': 'success', 'message': 'Day 13 simulation completed successfully'}
+2025-11-25 09:46:39,905 [INFO] apscheduler.executors.default: Job "Daily Simulation Pipeline (trigger: cron[hour='9', minute='46'], next run at: 2025-11-26 09:46:00 IST)" executed successfully
+2025-11-25 09:48:04,160 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 09:48:04,161 [WARNING] apscheduler.scheduler: Error getting due jobs from job store 'default': Cannot use MongoClient after close
+2025-11-25 09:48:04,162 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 09:48:04,163 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:50:07,233 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:50:07,257 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:50:07,291 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:50:07,299 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 09:50:07,299 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 09:50:07,301 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:51 (Asia/Kolkata)
+2025-11-25 09:51:00,018 [INFO] apscheduler.executors.default: Running job "Daily Simulation Pipeline (trigger: cron[hour='9', minute='51'], next run at: 2025-11-25 09:51:00 IST)" (scheduled at 2025-11-25 09:51:00+05:30)
+2025-11-25 09:51:00,020 [INFO] alternate_history: Scheduler triggering daily simulation...
+2025-11-25 09:51:02,351 [INFO] alternate_history: Starting simulation for Day 1
+2025-11-25 09:51:02,352 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 1] ---
+2025-11-25 09:51:17,098 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-25 09:51:17,099 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-25 09:51:25,983 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-25 09:51:25,985 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-25 09:51:38,501 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-25 09:51:38,502 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-25 09:51:40,017 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-25 09:51:40,019 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-25 09:51:40,019 [INFO] alternate_history: Simulation completed successfully for day 1
+2025-11-25 09:51:40,021 [INFO] alternate_history: Scheduled simulation completed successfully: {'day_index': 1, 'status': 'success', 'message': 'Day 1 simulation completed successfully'}
+2025-11-25 09:51:40,022 [INFO] apscheduler.executors.default: Job "Daily Simulation Pipeline (trigger: cron[hour='9', minute='51'], next run at: 2025-11-26 09:51:00 IST)" executed successfully
+2025-11-25 09:53:07,091 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 09:53:07,093 [WARNING] apscheduler.scheduler: Error getting due jobs from job store 'default': Cannot use MongoClient after close
+2025-11-25 09:53:07,093 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 09:53:07,094 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:53:13,664 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:53:13,670 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:53:13,703 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:53:13,707 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 09:53:13,707 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 09:53:13,708 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:51 (Asia/Kolkata)
+2025-11-25 09:53:13,711 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 09:53:13,711 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 09:53:13,712 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:53:17,915 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:53:17,935 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:53:17,965 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:53:17,969 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 09:53:17,969 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 09:53:17,969 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:51 (Asia/Kolkata)
+2025-11-25 09:54:05,315 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 09:54:05,315 [WARNING] apscheduler.scheduler: Error getting due jobs from job store 'default': Cannot use MongoClient after close
+2025-11-25 09:54:05,316 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 09:54:05,317 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 09:54:09,548 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 09:54:09,557 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 09:54:09,587 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 09:54:09,591 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 09:54:09,592 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 09:54:09,592 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 09:51 (Asia/Kolkata)
+2025-11-25 09:54:09,594 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 09:54:09,595 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 09:54:09,595 [INFO] alternate_history: MongoDB connection closed.
