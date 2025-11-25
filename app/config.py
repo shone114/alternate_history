@@ -1,7 +1,6 @@
 from pydantic_settings import BaseSettings
 from pydantic import Field
 from typing import Optional
-import os
 
 class Settings(BaseSettings):
     # API Keys - using Field to support legacy env var names
@@ -20,7 +19,7 @@ class Settings(BaseSettings):
 
     # Scheduler
     ENABLE_SCHEDULER: bool = True
-    SCHEDULE_TIME: str = "09:51" # HH:MM
+    SCHEDULE_TIME: str = "13:15" # HH:MM
     TIMEZONE: str = "Asia/Kolkata"
     API_BASE_URL: str = "http://localhost:8000"
 

@@ -11,6 +11,20 @@ from app.utils.prompts import build_prompt, extract_json_from_text, read_file
 from app.utils.logging import logger
 
 class PipelineService:
+    def get_universe_seed(self) -> str:
+        """Get universe seed from database instead of file"""
+        universe_doc = db.get_collection("universe").find_one()
+        if not universe_doc:
+            logger.warning("No universe document found in database, falling back to file")
+            return read_file("universe/universe_seed.json")
+        
+        # Remove MongoDB-specific fields
+        universe_copy = universe_doc.copy()
+        for key in ["_id", "created_at", "updated_at"]:
+            universe_copy.pop(key, None)
+        
+        return json.dumps(universe_copy, indent=2)
+    
     def get_next_day_index(self) -> int:
         last_subtopic = db.get_collection("subtopics").find_one(
             {"universe_id": settings.UNIVERSE_ID},
@@ -56,7 +70,7 @@ class PipelineService:
         logger.info(f"--- Step 1: Generating Subtopic [Day {day_index}] ---")
         
         replacements = {
-            "{{UNIVERSE_SEED_JSON}}": read_file("universe/universe_seed.json"),
+            "{{UNIVERSE_SEED_JSON}}": self.get_universe_seed(),
             "{{RECENT_TIMELINE_JSON}}": self.get_recent_events(),
             "{{ALL_PREVIOUS_SUBTOPICS_JSON}}": self.get_previous_subtopics()
         }
@@ -88,7 +102,7 @@ class PipelineService:
         logger.info("--- Step 2: Generating Model A Proposal ---")
         
         replacements = {
-            "{{UNIVERSE_SEED_JSON}}": read_file("universe/universe_seed.json"),
+            "{{UNIVERSE_SEED_JSON}}": self.get_universe_seed(),
             "{{SUBTOPIC}}": subtopic_data.get("selected_subtopic", ""),
             "{{RECENT_TIMELINE_JSON}}": self.get_recent_events()
         }
@@ -120,7 +134,7 @@ class PipelineService:
         logger.info("--- Step 3: Generating Model B Proposal ---")
         
         replacements = {
-            "{{UNIVERSE_SEED_JSON}}": read_file("universe/universe_seed.json"),
+            "{{UNIVERSE_SEED_JSON}}": self.get_universe_seed(),
             "{{SUBTOPIC}}": subtopic_data.get("selected_subtopic", ""),
             "{{RECENT_TIMELINE_JSON}}": self.get_recent_events()
         }
@@ -150,7 +164,7 @@ class PipelineService:
         logger.info("--- Step 4: Generating Model C Judgment ---")
         
         replacements = {
-            "{{UNIVERSE_SEED_JSON}}": read_file("universe/universe_seed.json"),
+            "{{UNIVERSE_SEED_JSON}}": self.get_universe_seed(),
             "{{SUBTOPIC}}": subtopic_data.get("selected_subtopic", ""),
             "{{RECENT_TIMELINE_JSON}}": self.get_recent_events(),
             "{{MODEL_A_JSON}}": json.dumps(self.clean_doc_for_prompt(model_a_doc), indent=2),

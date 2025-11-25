@@ -5,7 +5,6 @@ from app.config import settings
 from app.utils.logging import logger
 from app.database import db
 import httpx
-import asyncio
 from datetime import datetime
 import pytz
 

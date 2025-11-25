@@ -92,6 +92,15 @@ The system operates on a daily cycle using a 4-step pipeline:
    ```bash
    mongod
    ```
+   
+   **OR use MongoDB Atlas** (cloud)
+   - Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+   - Get your connection string from Atlas dashboard
+   - Update `.env` with your Atlas URI:
+     ```ini
+     MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
+     ```
+   - See [Migration Guide](#migrating-to-mongodb-atlas) below for migrating existing data
 
 2. **Start Backend**
    ```bash
@@ -180,7 +189,7 @@ judgements [limit]      # Show recent judgements
 
 ### Backend
 - FastAPI
-- MongoDB (PyMongo)
+- MongoDB (local or Atlas cloud)
 - APScheduler
 - Pydantic
 
@@ -235,6 +244,67 @@ alternate_history/
 - **CORS**: Currently allows all origins - restrict in production
 - **API Keys**: Never commit `.env` file to version control
 - **Rate Limiting**: Not implemented - add for production
+
+## 📦 Migrating to MongoDB Atlas
+
+If you're currently using local MongoDB and want to migrate to MongoDB Atlas (cloud):
+
+### Step 1: Export Local Data
+
+```bash
+python migrate_to_atlas.py --export
+```
+
+This creates a `mongodb_export/` directory with JSON files containing all your data.
+
+### Step 2: Update .env with Atlas URI
+
+1. Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+2. Get your connection string from the Atlas dashboard
+3. Update your `.env` file:
+   ```ini
+   MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
+   ```
+   Replace `<username>`, `<password>`, and `<cluster>` with your actual values
+
+### Step 3: Import to Atlas
+
+```bash
+python migrate_to_atlas.py --import
+```
+
+This uploads all your data to MongoDB Atlas.
+
+### Step 4: Verify Migration
+
+```bash
+python migrate_to_atlas.py --verify
+```
+
+This compares document counts between local and Atlas to ensure everything migrated correctly.
+
+### Quick Migration (All Steps)
+
+```bash
+python migrate_to_atlas.py --full
+```
+
+Runs export, import, and verification in one command.
+
+### Troubleshooting
+
+**Connection Timeout**
+- Check your Atlas cluster is running
+- Verify your IP address is whitelisted in Atlas Network Access
+- Ensure your connection string is correct
+
+**Authentication Failed**
+- Double-check username and password in connection string
+- Ensure the database user has read/write permissions
+
+**Import Errors**
+- Make sure you ran `--export` first
+- Check that `mongodb_export/` directory exists with JSON files
 
 ## 📄 License
 

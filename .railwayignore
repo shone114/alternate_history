@@ -1,0 +1,29 @@
+# Railway Ignore File
+# Exclude frontend folder from backend deployment
+
+alt history frontend/
+node_modules/
+
+# Development files
+*.log
+.env.local
+.env.development
+
+# IDE
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Documentation (optional - remove if you want docs deployed)
+*.md
+!README.md
