@@ -1,5 +1,5 @@
 // API Service for Alternate History Engine Backend
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://825c58126580.ngrok-free.app';
 
 /**
  * Generic fetch wrapper with error handling
@@ -9,6 +9,7 @@ async function fetchAPI(endpoint, options = {}) {
         const response = await fetch(`${API_BASE_URL}${endpoint}`, {
             headers: {
                 'Content-Type': 'application/json',
+                'ngrok-skip-browser-warning': 'true',
                 ...options.headers,
             },
             ...options,

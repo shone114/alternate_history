@@ -501,3 +501,75 @@
 2025-11-25 13:35:50,335 [WARNING] apscheduler.scheduler: Error getting due jobs from job store 'default': Cannot use MongoClient after close
 2025-11-25 13:35:50,336 [INFO] alternate_history: Scheduler shut down.
 2025-11-25 13:35:50,337 [INFO] alternate_history: MongoDB connection closed.
+2025-11-25 18:37:24,837 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-25 18:37:25,183 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-25 18:37:29,595 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-25 18:37:29,755 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-25 18:37:29,755 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-25 18:37:29,757 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 13:15 (Asia/Kolkata)
+2025-11-25 18:38:52,443 [INFO] alternate_history: Starting simulation for Day 6
+2025-11-25 18:38:52,445 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 6] ---
+2025-11-25 18:39:28,587 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-25 18:39:28,588 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-25 18:39:38,490 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-25 18:39:38,492 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-25 18:39:50,995 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-25 18:39:50,996 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-25 18:39:54,277 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-25 18:39:54,331 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-25 18:39:54,333 [INFO] alternate_history: Simulation completed successfully for day 6
+2025-11-25 18:45:02,540 [INFO] alternate_history: Starting simulation for Day 7
+2025-11-25 18:45:02,543 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 7] ---
+2025-11-25 18:45:36,010 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-25 18:45:36,011 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-25 18:45:46,245 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-25 18:45:46,246 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-25 18:45:56,462 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-25 18:45:56,462 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-25 18:45:59,216 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-25 18:45:59,266 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-25 18:45:59,267 [INFO] alternate_history: Simulation completed successfully for day 7
+2025-11-25 19:19:37,848 [INFO] apscheduler.scheduler: Scheduler has been shut down
+2025-11-25 19:19:37,850 [WARNING] apscheduler.scheduler: Error getting due jobs from job store 'default': Cannot use MongoClient after close
+2025-11-25 19:19:37,851 [INFO] alternate_history: Scheduler shut down.
+2025-11-25 19:19:37,852 [INFO] alternate_history: MongoDB connection closed.
+2025-11-26 17:29:00,678 [ERROR] alternate_history: Unexpected error connecting to MongoDB: The resolution lifetime expired after 11.605 seconds: Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:192.168.1.1@53 answered REFUSED; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.
+2025-11-26 17:30:00,428 [ERROR] alternate_history: Unexpected error connecting to MongoDB: The resolution lifetime expired after 11.613 seconds: Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:192.168.1.1@53 answered REFUSED; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.; Server Do53:40.53.1.11@53 answered The DNS operation timed out.
+2025-11-26 17:32:50,774 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-26 17:32:51,182 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-26 17:32:51,247 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-26 17:32:51,579 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-26 17:32:51,580 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-26 17:32:51,581 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 13:15 (Asia/Kolkata)
+2025-11-26 17:37:34,648 [INFO] alternate_history: Starting simulation for Day 8
+2025-11-26 17:37:34,649 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 8] ---
+2025-11-26 17:38:11,089 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-26 17:38:11,090 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-26 17:38:22,827 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-26 17:38:22,828 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-26 17:38:40,435 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-26 17:38:40,436 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-26 17:38:43,580 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-26 17:38:43,722 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-26 17:38:43,723 [INFO] alternate_history: Simulation completed successfully for day 8
+2025-11-26 17:41:32,751 [INFO] alternate_history: Starting simulation for Day 9
+2025-11-26 17:41:32,752 [INFO] alternate_history: --- Step 1: Generating Subtopic [Day 9] ---
+2025-11-26 17:41:47,226 [INFO] alternate_history: Inserted subtopic into MongoDB.
+2025-11-26 17:41:47,227 [INFO] alternate_history: --- Step 2: Generating Model A Proposal ---
+2025-11-26 17:41:56,722 [INFO] alternate_history: Inserted Model A proposal into MongoDB.
+2025-11-26 17:41:56,722 [INFO] alternate_history: --- Step 3: Generating Model B Proposal ---
+2025-11-26 17:42:10,353 [INFO] alternate_history: Inserted Model B proposal into MongoDB.
+2025-11-26 17:42:10,354 [INFO] alternate_history: --- Step 4: Generating Model C Judgment ---
+2025-11-26 17:42:13,406 [INFO] alternate_history: Inserted judgment into 'judgements' collection.
+2025-11-26 17:42:13,505 [INFO] alternate_history: Inserted accepted event into 'timeline' collection.
+2025-11-26 17:42:13,507 [INFO] alternate_history: Simulation completed successfully for day 9
+2025-11-28 09:59:49,074 [ERROR] alternate_history: Failed to connect to MongoDB: SSL handshake failed: ac-pictc5c-shard-00-01.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),SSL handshake failed: ac-pictc5c-shard-00-00.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),SSL handshake failed: ac-pictc5c-shard-00-02.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69292532ecb2f2b4ee8b2501, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-pictc5c-shard-00-00.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-00.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-pictc5c-shard-00-01.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-01.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-pictc5c-shard-00-02.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-02.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+2025-11-28 09:59:49,074 [ERROR] alternate_history: Please check your MONGO_URI in .env file
+2025-11-28 10:00:40,402 [ERROR] alternate_history: Failed to connect to MongoDB: SSL handshake failed: ac-pictc5c-shard-00-00.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),SSL handshake failed: ac-pictc5c-shard-00-02.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms),SSL handshake failed: ac-pictc5c-shard-00-01.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69292566f87dc3c2a4221a77, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-pictc5c-shard-00-00.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-00.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-pictc5c-shard-00-01.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-01.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>, <ServerDescription ('ac-pictc5c-shard-00-02.s4ywegj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-pictc5c-shard-00-02.s4ywegj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+2025-11-28 10:00:40,403 [ERROR] alternate_history: Please check your MONGO_URI in .env file
+2025-11-28 10:02:47,439 [INFO] alternate_history: Connected to MongoDB -> alternate_history
+2025-11-28 10:02:47,644 [INFO] alternate_history: MongoDB indexes verified.
+2025-11-28 10:02:52,992 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-28 10:02:53,125 [INFO] apscheduler.scheduler: Added job "Daily Simulation Pipeline" to job store "default"
+2025-11-28 10:02:53,127 [INFO] apscheduler.scheduler: Scheduler started
+2025-11-28 10:02:53,129 [INFO] alternate_history: Scheduler started. Daily simulation scheduled for 13:15 (Asia/Kolkata)
